@@ -6,7 +6,10 @@ const Search = ({ onSearchChange }) => {
   const [search, setSearch] = useState(null);
 
   const loadedOptions = (inputValue) => {
-    return fetch(`${process.env.REACT_APP_GEO_API_URL}${inputValue}`, geoApiOptions)
+    return fetch(
+      `${process.env.REACT_APP_GEO_API_URL}${inputValue}`,
+      geoApiOptions
+    )
       .then((response) => response.json())
       .then((response) => {
         return {
