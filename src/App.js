@@ -1,6 +1,8 @@
 import { useState } from "react";
 import CurrentWeather from "./components/CurrentWeather";
 import Forecast from "./components/Forecast";
+import Header from "./components/Header";
+import MyGradient from "./components/MyGradient";
 import Search from "./components/Search";
 
 function App() {
@@ -32,6 +34,9 @@ function App() {
 
   return (
     <div className="app-container">
+      {/* <Header /> */}
+
+      {/* <MyGradient /> */}
       <Search onSearchChange={handleOnSearchChange} />
       {currentWeather && <CurrentWeather weatherData={currentWeather} />}
       {forecast && <Forecast forecastData={forecast} />}

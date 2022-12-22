@@ -147,3 +147,9 @@ code {
 .daily-details-value {
   color: #212121;
 }
+
+.st0 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
