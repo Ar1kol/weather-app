@@ -19,30 +19,30 @@ const CurrentWeather = ({ weatherData }) => {
           1
         )}°C`}</p>
         <div className="weather-details">
-          <div className="parameeter-row">
-            <span className="parameeter-label">Details</span>
+          <div className="parameter-row">
+            <span className="parameter-label">Details</span>
           </div>
-          <div className="parameeter-row">
-            <span className="parameeter-label">Feels like</span>
-            <span className="parameeter-value">
+          <div className="parameter-row">
+            <span className="parameter-label">Feels like</span>
+            <span className="parameter-value">
               {weatherData.main.feels_like.toFixed(1)}°C
             </span>
           </div>
-          <div className="parameeter-row">
-            <span className="parameeter-label">Wind</span>
-            <span className="parameeter-value">
+          <div className="parameter-row">
+            <span className="parameter-label">Wind</span>
+            <span className="parameter-value">
               {weatherData.wind.speed} m/s
             </span>
           </div>
-          <div className="parameeter-row">
-            <span className="parameeter-label">Humidity</span>
-            <span className="parameeter-value">
+          <div className="parameter-row">
+            <span className="parameter-label">Humidity</span>
+            <span className="parameter-value">
               {weatherData.main.humidity}%
             </span>
           </div>
-          <div className="parameeter-row">
-            <span className="parameeter-label">Pressure</span>
-            <span className="parameeter-value">
+          <div className="parameter-row">
+            <span className="parameter-label">Pressure</span>
+            <span className="parameter-value">
               {weatherData.main.pressure} hPa
             </span>
           </div>
